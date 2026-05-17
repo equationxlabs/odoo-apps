@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!--
+        Form view for the MCP Connector setup wizard.
+        Uses the new domain-style `invisible` attribute introduced in Odoo 17;
+        does NOT support the legacy `attrs` syntax (removed in 17). Targets
+        Odoo 17 and 18 only.
+    -->
+    <record id="pilot_for_odoo_setup_wizard_form" model="ir.ui.view">
+        <field name="name">pilot.for.odoo.setup.wizard.form</field>
+        <field name="model">pilot.for.odoo.setup.wizard</field>
+        <field name="arch" type="xml">
+            <form string="MCP Connector Setup">
+                <sheet>
+                    <!--
+                        `state` drives every visibility toggle below. It must
+                        be declared in the view (Odoo 17+ checks this).
+                    -->
+                    <field name="state" invisible="1"/>
+                    <div class="oe_title">
+                        <h1>Connect an AI agent to your Odoo</h1>
+                        <p>
+                            Generates the credentials and configuration needed to
+                            connect any Model Context Protocol (MCP) client — such
+                            as Claude Desktop or Claude Code — to your Odoo
+                            instance via XML-RPC.
+                        </p>
+                    </div>
+
+                    <group string="Your Odoo connection">
+                        <field name="odoo_url"/>
+                        <field name="odoo_db"/>
+                        <field name="odoo_login"/>
+                    </group>
+
+                    <group string="Generated API key" invisible="state == 'start'">
+                        <field name="api_key"/>
+                    </group>
+
+                    <group string="MCP client configuration" invisible="state == 'start'">
+                        <field name="config_block" nolabel="1" widget="text"/>
+                        <field name="config_path_help" readonly="1" nolabel="1"/>
+                    </group>
+
+                    <div class="alert alert-info" role="alert" invisible="state == 'start'">
+                        <strong>Next:</strong> on your laptop, run one of:
+                        <ul style="margin: 8px 0 0 0;">
+                            <li><strong>macOS / Linux:</strong>
+                                <code>curl -fsSL https://equationx.ai/odoo-pilot/install.sh | bash</code>
+                            </li>
+                            <li><strong>Windows (PowerShell):</strong>
+                                <code>irm https://equationx.ai/odoo-pilot/install.ps1 | iex</code>
+                            </li>
+                        </ul>
+                        The installer launches a wizard that asks for the URL,
+                        database, login, and API key shown above. Restart Claude
+                        Desktop when it finishes.
+                    </div>
+
+                    <div class="alert alert-warning" role="alert" invisible="state == 'start'">
+                        <strong>Important:</strong>
+                        The API key above is shown <em>only once</em>. Copy it now.
+                        If you lose it, run the wizard again to generate a new one.
+                        Existing keys can be revoked from your user profile under
+                        Account Security.
+                    </div>
+
+                    <div class="alert alert-secondary" role="alert"
+                         invisible="state == 'start'" style="margin-top: 12px;">
+                        Looking for a ready-made MCP client for Odoo CRM? See
+                        <strong>OdooPilot</strong> — a third-party AI agent for
+                        Odoo from equationx that uses this exact configuration.
+                    </div>
+
+                    <div class="alert alert-secondary" role="alert"
+                         invisible="state == 'start'" style="margin-top: 12px;">
+                        <strong>Custom Odoo?</strong>
+                        Custom modules, custom stages, multi-company setups
+                        sometimes need extra wiring. equationx offers paid
+                        setup &amp; customisation support — see the Learn more
+                        button below.
+                    </div>
+                </sheet>
+                <footer>
+                    <button name="action_generate"
+                            type="object"
+                            string="Generate API key &amp; config"
+                            class="btn-primary"
+                            invisible="state == 'generated'"/>
+                    <button name="action_open_docs"
+                            type="object"
+                            string="Learn more"
+                            class="btn-secondary"
+                            invisible="state == 'start'"/>
+                    <button special="cancel" string="Close"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="pilot_for_odoo_setup_wizard_action" model="ir.actions.act_window">
+        <field name="name">MCP Connector Setup</field>
+        <field name="res_model">pilot.for.odoo.setup.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_pilot_for_odoo_root"
+              name="MCP Connector"
+              parent="base.menu_administration"
+              sequence="100"/>
+    <menuitem id="menu_pilot_for_odoo_setup_wizard"
+              name="Setup wizard"
+              parent="menu_pilot_for_odoo_root"
+              action="pilot_for_odoo_setup_wizard_action"
+              sequence="10"/>
+
+</odoo>
