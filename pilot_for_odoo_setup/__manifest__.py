@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "MCP Connector for Odoo CRM",
-    "version": "1.0.0",
-    "summary": "Connect Claude Desktop (and any MCP-compatible AI client) to your Odoo. One-click API key + ready-to-paste config.",
+    "name": "Odoo MCP Connector",
+    "version": "1.0.1",
+    "summary": "From equationx, the team behind OdooPilot. Free connector that links Claude Desktop and any MCP client to your Odoo CRM in two clicks.",
     "description": """
-MCP Connector for Odoo CRM
-===========================
+Odoo MCP Connector — by equationx
+==================================
 
-A free, standalone setup wizard that connects any **Model Context Protocol (MCP)**
-client — Claude Desktop, Claude Code, Cursor, or any other — to your Odoo
-Community Edition instance.
+A free, standalone setup wizard from **equationx**, the team behind
+`OdooPilot <https://equationx.ai/products/odoo-pilot>`_. Connects any
+**Model Context Protocol (MCP)** client — Claude Desktop, Claude Code,
+Cursor, OdooPilot, or your own build — to your Odoo Community Edition
+instance.
 
 What this module does
 ---------------------
