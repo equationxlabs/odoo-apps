@@ -77,7 +77,7 @@ or any third party.
 Compatibility
 =============
 
-* Odoo Community Edition 16, 17, 18
+* Odoo Community Edition 17 and 18
 * Works with Odoo Enterprise as a superset
 * Requires XML-RPC enabled (default on Community Edition)
 
