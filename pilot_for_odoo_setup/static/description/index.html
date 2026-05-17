@@ -24,16 +24,22 @@
   <!-- ====================== HOW IT COSTS YOU ====================== -->
   <div style="background:#eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; padding: 20px 22px; max-width: 720px; margin: 32px auto 0;">
     <div style="font-size: 11px; letter-spacing: 0.18em; color: #1d4ed8; text-transform: uppercase; font-weight: 600; margin-bottom: 6px;">
-      What it costs
+      What it costs &middot; what you need
     </div>
     <p style="margin: 0; font-size: 15px; color: #0a0a0a;">
-      <strong>This module is free.</strong> It generates an Odoo API key and a config block &mdash; that's it.
-      <strong>You also need an MCP client</strong> running on a laptop. Your options:
+      <strong>This module is free.</strong> It generates an Odoo API key and a config block in
+      the standard Claude Desktop / Claude Code / Cursor MCP format &mdash; that's it.
+      <strong>You also need an MCP client</strong> running on a laptop.
+      The MCP ecosystem is young, so realistically your options today are:
     </p>
     <ul style="margin: 10px 0 0 0; padding-left: 22px; font-size: 14px; color: #52525b;">
-      <li><strong>Free / open-source MCP clients</strong> from the community &mdash; build-your-own friendly</li>
-      <li><strong>Build your own</strong> using the config block as a template (DIY)</li>
-      <li><strong><a href="https://equationx.ai/products/odoo-pilot" style="color:#2563eb;">OdooPilot</a></strong> &mdash; a ready-made agent by equationx with 20 tools + 4 workflow skills, $199 one-time (separate paid product)</li>
+      <li>
+        <strong><a href="https://equationx.ai/products/odoo-pilot" style="color:#2563eb;">OdooPilot</a></strong>
+        &mdash; a ready-made agent by equationx with 20 tools + 4 workflow skills,
+        $199 one-time (separate paid product). The polished out-of-the-box option.
+      </li>
+      <li><strong>Build your own MCP server</strong> using the config block as a template &mdash; the JSON shape is the standard MCP format, so the same credentials feed any future Odoo-aware MCP server</li>
+      <li><strong>Community / open-source MCP clients</strong> &mdash; rare today, but the ecosystem is growing fast and our credentials will work with anything that speaks the MCP spec</li>
     </ul>
   </div>
 
@@ -296,10 +302,16 @@
   <!-- ====================== STANDALONE / WHAT SHIPS ====================== -->
   <h2 style="font-size: 24px; margin: 0 0 14px; font-weight: 600;">Standalone, by design</h2>
   <p>
-    This module is free and useful on its own. The generated key works with
-    any MCP-compatible client &mdash; not only with the OdooPilot agent mentioned
-    above. You can also use the produced config as a template for building your
-    own MCP integrations.
+    This module is free and stands on its own. The generated key is a vanilla
+    Odoo XML-RPC credential and the config block is the standard Claude Desktop /
+    Claude Code / Cursor MCP format &mdash; both work with any tool that speaks them.
+  </p>
+  <p>
+    Honest framing: today, <strong>OdooPilot</strong> is the most polished
+    external MCP client for Odoo, so most buyers will pair this module with it.
+    If you'd rather build your own MCP server or wait for the open-source
+    ecosystem to grow, the same credentials feed any future Odoo-aware client &mdash;
+    no rework needed when more options ship.
   </p>
   <p style="margin-top: 18px; font-weight: 600;">What this module ships:</p>
   <ul style="padding-left: 18px; color: #52525b;">
