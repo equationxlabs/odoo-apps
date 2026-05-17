@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Odoo MCP Connector — banner concepts (880×440)</title>
+<style>
+  body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background: #f4f4f5;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 40px 24px 80px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 8px; font-weight: 600; }
+  .intro { font-size: 14px; color: #52525b; max-width: 800px; margin: 0 0 40px; }
+
+  .variant {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e4e4e7;
+    padding: 22px;
+    margin-bottom: 28px;
+  }
+  .variant h2 {
+    font-size: 17px;
+    margin: 0 0 4px;
+    font-weight: 600;
+  }
+  .variant p.desc {
+    font-size: 13px;
+    color: #71717a;
+    margin: 0 0 18px;
+  }
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: #71717a;
+    text-transform: uppercase;
+    margin: 14px 0 8px;
+  }
+
+  /* The banner at production size — 880x440 */
+  .banner {
+    width: 880px;
+    max-width: 100%;
+    aspect-ratio: 880 / 440;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e4e4e7;
+  }
+  .banner svg { width: 100%; height: 100%; display: block; }
+
+  /* Marketplace card crop */
+  .card {
+    width: 280px;
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .card-banner { width: 100%; aspect-ratio: 880/440; overflow: hidden; }
+  .card-banner svg { width: 100%; height: 100%; display: block; }
+  .card-body { padding: 14px 16px 16px; }
+  .card-title { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+  .card-meta { font-size: 13px; color: #71717a; display:flex; justify-content: space-between; }
+
+  .row-wide {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .row-wide > div + div { flex-shrink: 0; }
+
+  .footnote {
+    margin-top: 32px;
+    font-size: 13px;
+    color: #71717a;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Odoo MCP Connector — banner concepts</h1>
+  <p class="intro">
+    All four banners are exactly <strong>880&times;440</strong> (the actual size
+    you measured). Each leads with the <strong>OdooPilot association</strong> visibly,
+    shows <strong>what you can ask</strong>, and includes a <strong>live preview link</strong>
+    pointing at <code>equationx.ai/products/odoo-pilot</code>. Pick one, screenshot
+    the variant, or tell me the letter and I'll convert to PNG and push.
+  </p>
+
+  <!-- ============================== A ============================== -->
+  <div class="variant">
+    <h2>A &middot; OdooPilot brand-led + example questions</h2>
+    <p class="desc">Big OdooPilot reference, four real example questions stacked, live preview line. Most direct.</p>
+    <div class="row-wide">
+      <div class="banner">
+        <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1d4ed8"/>
+              <stop offset="1" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+          <rect width="880" height="440" fill="url(#gA)"/>
+          <!-- top brand line -->
+          <text x="48" y="62" font-family="-apple-system,system-ui,Helvetica" font-size="16" fill="#bfdbfe" font-weight="700" letter-spacing="3">FROM EQUATIONX</text>
+          <text x="48" y="120" font-family="-apple-system,system-ui,Helvetica" font-size="44" font-weight="800" fill="#fff">Already heard of <tspan fill="#bfdbfe">OdooPilot</tspan>?</text>
+          <text x="48" y="158" font-family="-apple-system,system-ui,Helvetica" font-size="20" fill="#dbeafe" font-weight="500">This is the free Odoo-side companion that gets you connected.</text>
+
+          <!-- 4 example questions -->
+          <g font-family="-apple-system,system-ui,Helvetica" font-size="18" font-weight="600" fill="#1d4ed8">
+            <rect x="48"  y="205" width="380" height="50" rx="25" fill="#fff"/>
+            <text x="68" y="237">&ldquo;Give me the Monday brief.&rdquo;</text>
+
+            <rect x="48"  y="265" width="380" height="50" rx="25" fill="#fff"/>
+            <text x="68" y="297">&ldquo;How is Alex doing this month?&rdquo;</text>
+
+            <rect x="48"  y="325" width="380" height="50" rx="25" fill="#fff"/>
+            <text x="68" y="357">&ldquo;Audit my lead sources for the quarter.&rdquo;</text>
+          </g>
+
+          <!-- sparkle on the right -->
+          <g transform="translate(680 220)">
+            <polygon points="0,-70 18,0 0,70 -18,0" fill="#fff"/>
+            <polygon points="-70,0 0,-18 70,0 0,18" fill="#fff"/>
+          </g>
+          <g transform="translate(770 130)">
+            <polygon points="0,-14 4,0 0,14 -4,0" fill="#bfdbfe"/>
+            <polygon points="-14,0 0,-4 14,0 0,4" fill="#bfdbfe"/>
+          </g>
+
+          <!-- preview line at bottom -->
+          <rect x="0" y="400" width="880" height="40" fill="rgba(0,0,0,.25)"/>
+          <text x="48" y="426" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#fff" font-weight="600">
+            Live preview &middot; equationx.ai/products/odoo-pilot
+          </text>
+          <text x="832" y="426" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#bfdbfe" font-weight="500" text-anchor="end">FREE &middot; LGPL-3</text>
+        </svg>
+      </div>
+      <div>
+        <div class="label">As marketplace card</div>
+        <div class="card">
+          <div class="card-banner">
+            <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+              <rect width="880" height="440" fill="url(#gA)"/>
+              <text x="48" y="62" font-size="16" fill="#bfdbfe" font-weight="700" letter-spacing="3">FROM EQUATIONX</text>
+              <text x="48" y="120" font-size="44" font-weight="800" fill="#fff">Already heard of <tspan fill="#bfdbfe">OdooPilot</tspan>?</text>
+              <text x="48" y="158" font-size="20" fill="#dbeafe" font-weight="500">This is the free Odoo-side companion that gets you connected.</text>
+              <g font-size="18" font-weight="600" fill="#1d4ed8">
+                <rect x="48"  y="205" width="380" height="50" rx="25" fill="#fff"/>
+                <text x="68" y="237">&ldquo;Give me the Monday brief.&rdquo;</text>
+                <rect x="48"  y="265" width="380" height="50" rx="25" fill="#fff"/>
+                <text x="68" y="297">&ldquo;How is Alex doing this month?&rdquo;</text>
+                <rect x="48"  y="325" width="380" height="50" rx="25" fill="#fff"/>
+                <text x="68" y="357">&ldquo;Audit my lead sources for the quarter.&rdquo;</text>
+              </g>
+              <g transform="translate(680 220)">
+                <polygon points="0,-70 18,0 0,70 -18,0" fill="#fff"/>
+                <polygon points="-70,0 0,-18 70,0 0,18" fill="#fff"/>
+              </g>
+              <rect x="0" y="400" width="880" height="40" fill="rgba(0,0,0,.25)"/>
+              <text x="48" y="426" font-size="15" fill="#fff" font-weight="600">Live preview &middot; equationx.ai/products/odoo-pilot</text>
+            </svg>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Odoo MCP Connector</div>
+            <div class="card-meta"><span>equationx</span><span>FREE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== B ============================== -->
+  <div class="variant">
+    <h2>B &middot; "What you can ask" feature grid</h2>
+    <p class="desc">Outcome-led. Six concrete questions in a tight grid. OdooPilot mention at top.</p>
+    <div class="row-wide">
+      <div class="banner">
+        <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+          <rect width="880" height="440" fill="#0f172a"/>
+          <text x="48" y="58" font-family="-apple-system,system-ui,Helvetica" font-size="14" fill="#60a5fa" font-weight="700" letter-spacing="3">BY EQUATIONX &middot; FROM THE MAKERS OF ODOOPILOT</text>
+          <text x="48" y="110" font-family="-apple-system,system-ui,Helvetica" font-size="38" font-weight="800" fill="#fff">Ask your Odoo. <tspan fill="#60a5fa">Anything.</tspan></text>
+          <text x="48" y="142" font-family="-apple-system,system-ui,Helvetica" font-size="17" fill="#94a3b8" font-weight="500">Free Odoo module &middot; connects any MCP client (Claude Desktop, Cursor, OdooPilot)</text>
+
+          <!-- 6 cards in 3x2 grid -->
+          <g font-family="-apple-system,system-ui,Helvetica">
+            <g>
+              <rect x="48"  y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="62" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">TIME BACK</text>
+              <text x="62" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;Give me the Monday brief.&rdquo;</text>
+            </g>
+            <g>
+              <rect x="313" y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="327" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">COACHING</text>
+              <text x="327" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;How is Alex this month?&rdquo;</text>
+            </g>
+            <g>
+              <rect x="578" y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="592" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">MARKETING</text>
+              <text x="592" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;Audit lead sources.&rdquo;</text>
+            </g>
+
+            <g>
+              <rect x="48"  y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="62" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">FORECAST</text>
+              <text x="62" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;Pipeline coverage?&rdquo;</text>
+            </g>
+            <g>
+              <rect x="313" y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="327" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">LEAKS</text>
+              <text x="327" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;What&rsquo;s drifting cold?&rdquo;</text>
+            </g>
+            <g>
+              <rect x="578" y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+              <text x="592" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">LOSSES</text>
+              <text x="592" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;Why are we losing deals?&rdquo;</text>
+            </g>
+          </g>
+
+          <!-- preview footer -->
+          <rect x="0" y="395" width="880" height="45" fill="#1e293b"/>
+          <text x="48" y="423" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#fff" font-weight="600">
+            Live preview &rarr; <tspan fill="#60a5fa">equationx.ai/products/odoo-pilot</tspan>
+          </text>
+          <text x="832" y="423" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#94a3b8" font-weight="500" text-anchor="end">FREE</text>
+        </svg>
+      </div>
+      <div>
+        <div class="label">As marketplace card</div>
+        <div class="card">
+          <div class="card-banner">
+            <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+              <rect width="880" height="440" fill="#0f172a"/>
+              <text x="48" y="58" font-size="14" fill="#60a5fa" font-weight="700" letter-spacing="3">BY EQUATIONX &middot; FROM THE MAKERS OF ODOOPILOT</text>
+              <text x="48" y="110" font-size="38" font-weight="800" fill="#fff">Ask your Odoo. <tspan fill="#60a5fa">Anything.</tspan></text>
+              <g font-family="-apple-system,system-ui,Helvetica">
+                <rect x="48"  y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="62" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">TIME BACK</text>
+                <text x="62" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;Give me the Monday brief.&rdquo;</text>
+                <rect x="313" y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="327" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">COACHING</text>
+                <text x="327" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;How is Alex this month?&rdquo;</text>
+                <rect x="578" y="175" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="592" y="205" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">MARKETING</text>
+                <text x="592" y="230" font-size="15" fill="#fff" font-weight="600">&ldquo;Audit lead sources.&rdquo;</text>
+                <rect x="48"  y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="62" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">FORECAST</text>
+                <text x="62" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;Pipeline coverage?&rdquo;</text>
+                <rect x="313" y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="327" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">LEAKS</text>
+                <text x="327" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;What&rsquo;s drifting cold?&rdquo;</text>
+                <rect x="578" y="259" width="255" height="74" rx="10" fill="#1e293b"/>
+                <text x="592" y="289" font-size="11" fill="#60a5fa" font-weight="700" letter-spacing="2">LOSSES</text>
+                <text x="592" y="314" font-size="15" fill="#fff" font-weight="600">&ldquo;Why are we losing deals?&rdquo;</text>
+              </g>
+              <rect x="0" y="395" width="880" height="45" fill="#1e293b"/>
+              <text x="48" y="423" font-size="15" fill="#fff" font-weight="600">Live preview &rarr; <tspan fill="#60a5fa">equationx.ai/products/odoo-pilot</tspan></text>
+            </svg>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Odoo MCP Connector</div>
+            <div class="card-meta"><span>equationx</span><span>FREE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== C ============================== -->
+  <div class="variant">
+    <h2>C &middot; OdooPilot logo + tagline + screenshot tease</h2>
+    <p class="desc">Brand-led with a fragment of an actual brief output on the right. Looks like real product, not stock.</p>
+    <div class="row-wide">
+      <div class="banner">
+        <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+          <rect width="880" height="440" fill="#fafafa"/>
+          <!-- LEFT half -->
+          <g font-family="-apple-system,system-ui,Helvetica">
+            <text x="48" y="68" font-size="14" fill="#71717a" font-weight="700" letter-spacing="3">EQUATIONX &middot; ODOO MCP CONNECTOR</text>
+
+            <!-- big sparkle next to OdooPilot wordmark -->
+            <g transform="translate(78 130)">
+              <polygon points="0,-26 7,0 0,26 -7,0" fill="#2563eb"/>
+              <polygon points="-26,0 0,-7 26,0 0,7" fill="#2563eb"/>
+            </g>
+            <text x="114" y="142" font-size="44" font-weight="800" fill="#0a0a0a">OdooPilot</text>
+
+            <text x="48" y="200" font-size="22" font-weight="600" fill="#52525b">on Claude Desktop,</text>
+            <text x="48" y="232" font-size="22" font-weight="600" fill="#52525b">connected to your Odoo</text>
+            <text x="48" y="264" font-size="22" font-weight="600" fill="#52525b">in two clicks.</text>
+
+            <text x="48" y="320" font-size="16" fill="#71717a" font-weight="500">This module is the free Odoo-side wizard.</text>
+            <text x="48" y="342" font-size="16" fill="#71717a" font-weight="500">OdooPilot is the AI client. Together: instant CRM answers.</text>
+
+            <rect x="48" y="370" width="320" height="40" rx="20" fill="#2563eb"/>
+            <text x="208" y="397" text-anchor="middle" font-size="15" fill="#fff" font-weight="600">Live preview &rarr; equationx.ai/products/odoo-pilot</text>
+          </g>
+
+          <!-- RIGHT: faux brief card -->
+          <g transform="translate(500 60)">
+            <rect width="332" height="320" rx="12" fill="#fff" stroke="#e4e4e7"/>
+            <rect x="20" y="20" width="80" height="22" rx="6" fill="#dbeafe"/>
+            <text x="60" y="36" font-family="-apple-system,system-ui,Helvetica" font-size="11" fill="#1d4ed8" font-weight="700" text-anchor="middle">MONDAY BRIEF</text>
+
+            <text x="20" y="74" font-family="-apple-system,system-ui,Helvetica" font-size="16" fill="#0a0a0a" font-weight="700">Pipeline snapshot</text>
+            <text x="20" y="98" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">Open pipeline: <tspan fill="#0a0a0a" font-weight="600">$2.34M</tspan></text>
+            <text x="20" y="118" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">At-risk (idle &ge; 14d): <tspan fill="#dc2626" font-weight="600">$612K</tspan></text>
+            <text x="20" y="138" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">Coverage: <tspan fill="#0a0a0a" font-weight="600">1.4&times;</tspan> (watch)</text>
+
+            <line x1="20" y1="160" x2="312" y2="160" stroke="#e4e4e7"/>
+
+            <text x="20" y="186" font-family="-apple-system,system-ui,Helvetica" font-size="16" fill="#0a0a0a" font-weight="700">Action today</text>
+            <text x="20" y="210" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">Alex: call lead 14087</text>
+            <text x="20" y="226" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">before 11am &mdash; $94K,</text>
+            <text x="20" y="242" font-family="-apple-system,system-ui,Helvetica" font-size="13" fill="#52525b">deposit deadline Friday.</text>
+
+            <line x1="20" y1="262" x2="312" y2="262" stroke="#e4e4e7"/>
+            <text x="20" y="288" font-family="-apple-system,system-ui,Helvetica" font-size="11" fill="#71717a">Generated by OdooPilot &middot; 30s</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <div class="label">As marketplace card</div>
+        <div class="card">
+          <div class="card-banner">
+            <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+              <rect width="880" height="440" fill="#fafafa"/>
+              <text x="48" y="68" font-size="14" fill="#71717a" font-weight="700" letter-spacing="3">EQUATIONX &middot; ODOO MCP CONNECTOR</text>
+              <g transform="translate(78 130)">
+                <polygon points="0,-26 7,0 0,26 -7,0" fill="#2563eb"/>
+                <polygon points="-26,0 0,-7 26,0 0,7" fill="#2563eb"/>
+              </g>
+              <text x="114" y="142" font-size="44" font-weight="800" fill="#0a0a0a">OdooPilot</text>
+              <text x="48" y="200" font-size="22" font-weight="600" fill="#52525b">on Claude Desktop,</text>
+              <text x="48" y="232" font-size="22" font-weight="600" fill="#52525b">connected to your Odoo</text>
+              <text x="48" y="264" font-size="22" font-weight="600" fill="#52525b">in two clicks.</text>
+              <rect x="48" y="370" width="320" height="40" rx="20" fill="#2563eb"/>
+              <text x="208" y="397" text-anchor="middle" font-size="15" fill="#fff" font-weight="600">Live preview &rarr; equationx.ai/products/odoo-pilot</text>
+              <g transform="translate(500 60)">
+                <rect width="332" height="320" rx="12" fill="#fff" stroke="#e4e4e7"/>
+                <rect x="20" y="20" width="80" height="22" rx="6" fill="#dbeafe"/>
+                <text x="60" y="36" font-size="11" fill="#1d4ed8" font-weight="700" text-anchor="middle">MONDAY BRIEF</text>
+                <text x="20" y="74" font-size="16" fill="#0a0a0a" font-weight="700">Pipeline snapshot</text>
+                <text x="20" y="98" font-size="13" fill="#52525b">Open pipeline: <tspan fill="#0a0a0a" font-weight="600">$2.34M</tspan></text>
+                <text x="20" y="118" font-size="13" fill="#52525b">At-risk: <tspan fill="#dc2626" font-weight="600">$612K</tspan></text>
+                <text x="20" y="138" font-size="13" fill="#52525b">Coverage: <tspan fill="#0a0a0a" font-weight="600">1.4&times;</tspan></text>
+                <line x1="20" y1="160" x2="312" y2="160" stroke="#e4e4e7"/>
+                <text x="20" y="186" font-size="16" fill="#0a0a0a" font-weight="700">Action today</text>
+                <text x="20" y="210" font-size="13" fill="#52525b">Alex: call lead 14087</text>
+                <text x="20" y="226" font-size="13" fill="#52525b">before 11am.</text>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Odoo MCP Connector</div>
+            <div class="card-meta"><span>equationx</span><span>FREE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== D ============================== -->
+  <div class="variant">
+    <h2>D &middot; Hero + 2 strong proof points (Stripe Connect feel)</h2>
+    <p class="desc">Tight headline, two side-by-side proof tiles. Most "indie SaaS" feeling.</p>
+    <div class="row-wide">
+      <div class="banner">
+        <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="gD" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#1e3a8a"/>
+              <stop offset="1" stop-color="#2563eb"/>
+            </linearGradient>
+          </defs>
+          <rect width="880" height="440" fill="url(#gD)"/>
+
+          <!-- top half hero -->
+          <text x="48" y="62" font-family="-apple-system,system-ui,Helvetica" font-size="14" fill="#bfdbfe" font-weight="700" letter-spacing="3">BY EQUATIONX</text>
+          <text x="48" y="118" font-family="-apple-system,system-ui,Helvetica" font-size="40" font-weight="800" fill="#fff">Connect Claude Desktop to Odoo.</text>
+          <text x="48" y="160" font-family="-apple-system,system-ui,Helvetica" font-size="20" fill="#dbeafe" font-weight="500">Free wizard from the team behind <tspan fill="#fff" font-weight="700">OdooPilot</tspan>. Two clicks, then ask anything.</text>
+
+          <!-- two tiles -->
+          <g font-family="-apple-system,system-ui,Helvetica">
+            <rect x="48"  y="210" width="395" height="155" rx="14" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.15)"/>
+            <text x="68" y="245" font-size="13" fill="#bfdbfe" font-weight="700" letter-spacing="2">SETUP</text>
+            <text x="68" y="285" font-size="26" font-weight="800" fill="#fff">2 clicks.</text>
+            <text x="68" y="318" font-size="14" fill="#dbeafe">Install &rarr; generate key &rarr; paste config. Done.</text>
+            <text x="68" y="348" font-size="14" fill="#dbeafe">No JSON editing, no file paths.</text>
+
+            <rect x="463" y="210" width="370" height="155" rx="14" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.15)"/>
+            <text x="483" y="245" font-size="13" fill="#bfdbfe" font-weight="700" letter-spacing="2">WHAT YOU GET</text>
+            <text x="483" y="280" font-size="15" fill="#fff" font-weight="600">&middot; Hours back every week</text>
+            <text x="483" y="304" font-size="15" fill="#fff" font-weight="600">&middot; Coach 1:1s with real data</text>
+            <text x="483" y="328" font-size="15" fill="#fff" font-weight="600">&middot; Marketing ROI in 30 seconds</text>
+            <text x="483" y="352" font-size="15" fill="#fff" font-weight="600">&middot; Customer answers on demand</text>
+          </g>
+
+          <!-- footer -->
+          <rect x="0" y="395" width="880" height="45" fill="rgba(0,0,0,.3)"/>
+          <text x="48" y="423" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#fff" font-weight="600">
+            Live preview &rarr; <tspan fill="#bfdbfe">equationx.ai/products/odoo-pilot</tspan>
+          </text>
+          <text x="832" y="423" font-family="-apple-system,system-ui,Helvetica" font-size="15" fill="#dbeafe" font-weight="500" text-anchor="end">FREE &middot; CE 17 + 18</text>
+        </svg>
+      </div>
+      <div>
+        <div class="label">As marketplace card</div>
+        <div class="card">
+          <div class="card-banner">
+            <svg viewBox="0 0 880 440" preserveAspectRatio="xMidYMid slice">
+              <rect width="880" height="440" fill="url(#gD)"/>
+              <text x="48" y="62" font-size="14" fill="#bfdbfe" font-weight="700" letter-spacing="3">BY EQUATIONX</text>
+              <text x="48" y="118" font-size="40" font-weight="800" fill="#fff">Connect Claude Desktop to Odoo.</text>
+              <text x="48" y="160" font-size="20" fill="#dbeafe" font-weight="500">From the team behind <tspan fill="#fff" font-weight="700">OdooPilot</tspan>.</text>
+              <g>
+                <rect x="48"  y="210" width="395" height="155" rx="14" fill="rgba(255,255,255,.08)"/>
+                <text x="68" y="245" font-size="13" fill="#bfdbfe" font-weight="700" letter-spacing="2">SETUP</text>
+                <text x="68" y="285" font-size="26" font-weight="800" fill="#fff">2 clicks.</text>
+                <text x="68" y="318" font-size="14" fill="#dbeafe">Install &rarr; key &rarr; paste.</text>
+                <rect x="463" y="210" width="370" height="155" rx="14" fill="rgba(255,255,255,.08)"/>
+                <text x="483" y="245" font-size="13" fill="#bfdbfe" font-weight="700" letter-spacing="2">WHAT YOU GET</text>
+                <text x="483" y="280" font-size="15" fill="#fff" font-weight="600">&middot; Hours back every week</text>
+                <text x="483" y="304" font-size="15" fill="#fff" font-weight="600">&middot; Coach with real data</text>
+                <text x="483" y="328" font-size="15" fill="#fff" font-weight="600">&middot; Marketing ROI in 30s</text>
+              </g>
+              <rect x="0" y="395" width="880" height="45" fill="rgba(0,0,0,.3)"/>
+              <text x="48" y="423" font-size="15" fill="#fff" font-weight="600">Live preview &rarr; equationx.ai/products/odoo-pilot</text>
+            </svg>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Odoo MCP Connector</div>
+            <div class="card-meta"><span>equationx</span><span>FREE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footnote">
+    Pick a variant (A / B / C / D) and tell me &mdash; I'll render to PNG at 880&times;440 (or 1760&times;880 for retina),
+    drop into <code>static/description/icon.png</code> in the repo, push, and rescan the listing.
+    Or screenshot the closest direction and iterate it in Claude / Figma for more polish.
+  </p>
+
+</div>
+</body>
+</html>

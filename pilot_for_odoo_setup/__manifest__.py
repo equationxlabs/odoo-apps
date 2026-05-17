@@ -69,7 +69,13 @@ LGPL-3. equationx is independent and not affiliated with Odoo SA.
         "security/ir.model.access.csv",
         "views/setup_wizard_views.xml",
     ],
-    "images": ["static/description/icon.png"],
+    # Odoo Apps shows the first image as the primary banner on the marketplace
+    # card. We list the animated GIF first; icon.png ships as a static fallback
+    # for contexts that don't render animation.
+    "images": [
+        "static/description/banner.gif",
+        "static/description/icon.png",
+    ],
     "installable": True,
     "application": False,
     "auto_install": False,
