@@ -1,62 +1,315 @@
-<section style="font-family: -apple-system, system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; color: #0a0a0a; line-height: 1.55;">
+<section style="font-family: -apple-system, system-ui, sans-serif; max-width: 920px; margin: 0 auto; padding: 32px 16px; color: #0a0a0a; line-height: 1.55;">
 
-  <div style="text-align:center; padding: 24px 0 16px;">
-    <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #71717a; margin-bottom: 14px;">
-      Setup wizard &middot; free &middot; LGPL-3
+  <!-- ====================== HERO ====================== -->
+  <div style="text-align:center; padding: 32px 16px 24px;">
+    <div style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #71717a; margin-bottom: 14px;">
+      Setup wizard &middot; LGPL-3
     </div>
-    <h1 style="font-size: 36px; line-height: 1.1; margin: 0 0 16px; font-weight: 600;">
-      MCP Connector<br/>
-      <span style="color: #71717a;">for Odoo CRM.</span>
+    <h1 style="font-size: 44px; line-height: 1.05; margin: 0 0 18px; font-weight: 700;">
+      Stop building reports.<br/>
+      <span style="color: #71717a;">Start asking your Odoo.</span>
     </h1>
-    <p style="font-size: 17px; color: #52525b; max-width: 580px; margin: 0 auto;">
+    <p style="font-size: 18px; color: #52525b; max-width: 660px; margin: 0 auto;">
       Connect Claude Desktop, Claude Code, Cursor, or any Model Context Protocol
-      client to your Odoo in two clicks. Generates an API key and a ready-to-paste
-      configuration block.
+      client to your Odoo CRM. Give your team hours back every week, run 1:1s
+      with real numbers, answer any ad-hoc question in 30 seconds, and serve
+      customers with their full context already at hand.
     </p>
   </div>
 
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
+  <!-- ====================== HOW IT COSTS YOU ====================== -->
+  <div style="background:#eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; padding: 20px 22px; max-width: 720px; margin: 32px auto 0;">
+    <div style="font-size: 11px; letter-spacing: 0.18em; color: #1d4ed8; text-transform: uppercase; font-weight: 600; margin-bottom: 6px;">
+      What it costs
+    </div>
+    <p style="margin: 0; font-size: 15px; color: #0a0a0a;">
+      <strong>This module is free.</strong> It generates an Odoo API key and a config block &mdash; that's it.
+      <strong>You also need an MCP client</strong> running on a laptop. Your options:
+    </p>
+    <ul style="margin: 10px 0 0 0; padding-left: 22px; font-size: 14px; color: #52525b;">
+      <li><strong>Free / open-source MCP clients</strong> from the community &mdash; build-your-own friendly</li>
+      <li><strong>Build your own</strong> using the config block as a template (DIY)</li>
+      <li><strong><a href="https://equationx.ai/products/odoo-pilot" style="color:#2563eb;">OdooPilot</a></strong> &mdash; a ready-made agent by equationx with 20 tools + 4 workflow skills, $199 one-time (separate paid product)</li>
+    </ul>
+  </div>
 
-  <h2 style="font-size: 22px; margin: 0 0 14px;">What it does</h2>
-  <p>
-    Open <strong>Settings &rarr; MCP Connector &rarr; Setup wizard</strong> after install.
-    The wizard auto-detects your Odoo URL, database, and login, generates a
-    revocable API key on the current user, and renders the JSON configuration
-    block you paste into your MCP client's settings file.
+  <!-- ====================== TRUST BADGES ====================== -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; max-width: 760px; margin: 32px auto 0;">
+    <div style="background:#f4f4f5; border-radius:12px; padding:16px 14px; text-align:center;">
+      <div style="font-size:18px; font-weight:600; color:#0a0a0a;">Free</div>
+      <div style="font-size:12px; color:#71717a; margin-top:2px;">module &middot; LGPL-3</div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding:16px 14px; text-align:center;">
+      <div style="font-size:18px; font-weight:600; color:#0a0a0a;">Local-first</div>
+      <div style="font-size:12px; color:#71717a; margin-top:2px;">Your data stays</div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding:16px 14px; text-align:center;">
+      <div style="font-size:18px; font-weight:600; color:#0a0a0a;">2-click</div>
+      <div style="font-size:12px; color:#71717a; margin-top:2px;">setup wizard</div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding:16px 14px; text-align:center;">
+      <div style="font-size:18px; font-weight:600; color:#0a0a0a;">2FA-ready</div>
+      <div style="font-size:12px; color:#71717a; margin-top:2px;">API keys</div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding:16px 14px; text-align:center;">
+      <div style="font-size:18px; font-weight:600; color:#0a0a0a;">CE 17 + 18</div>
+      <div style="font-size:12px; color:#71717a; margin-top:2px;">Community Edition</div>
+    </div>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 56px 0 32px;"/>
+
+  <!-- ====================== USE CASES (BROADER) ====================== -->
+  <div style="text-align:center; margin-bottom: 36px;">
+    <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #71717a; margin-bottom: 10px;">
+      The value, once connected
+    </div>
+    <h2 style="font-size: 32px; margin: 0 0 12px; font-weight: 600;">
+      Hours back. Better answers. Happier customers.
+    </h2>
+    <p style="font-size: 15px; color: #52525b; max-width: 640px; margin: 0 auto;">
+      Once your MCP client is connected, your whole team &mdash; sales, marketing,
+      ops, customer success, finance &mdash; can ask Odoo anything in plain English
+      and get an answer in 30 seconds. Six concrete value buckets:
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 880px; margin: 0 auto;">
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Time back
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        Stop assembling reports by hand.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        The reports your managers build every Monday, the spreadsheets sales-ops
+        rolls up for the partner update, the weekly briefs for the board &mdash; ask
+        once, get them in seconds.
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Coach with data
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        1:1s, reviews, onboarding &mdash; on real numbers.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        Walk into every 1:1 with the salesperson&apos;s 30-day picture and the
+        leads worth discussing. New reps explore the CRM by asking. Quarterly
+        reviews built from data, not memory.
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Marketing accountability
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        Know which channel actually pays.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        Win rate &times; revenue per lead by source / campaign / medium. Find
+        the channels that look busy but burn time. Spend the next dollar on
+        the one that works.
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Ad-hoc anything
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        Answer any question, no SQL, no dashboards.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        Slice pipeline by segment, country, tag, deal size. Compare any two
+        time periods. Find customers fitting any rule. Audit the CRM&apos;s
+        own data quality. All in conversation.
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Catch issues early
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        See leaks before they cost you.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        Aging leads going cold, deals stuck in late-stage, customers slipping
+        toward renewal risk, missing follow-ups across the team. Catch them
+        when there&apos;s still time to act.
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 22px; background:#fff;">
+      <div style="font-size: 12px; letter-spacing: 0.15em; color: #2563eb; text-transform: uppercase; font-weight: 600;">
+        Customer responsiveness
+      </div>
+      <div style="font-weight: 600; margin-top: 8px; font-size: 17px;">
+        Reply with full context, every time.
+      </div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 8px;">
+        Before a sales call, ask for the customer&apos;s full history. Before a
+        support reply, ask for their account state. Faster, better-informed
+        responses without context-switching to Odoo.
+      </div>
+    </div>
+
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 56px 0 32px;"/>
+
+  <!-- ====================== SCREENSHOTS (PROOF) ====================== -->
+  <div style="text-align:center; margin-bottom: 28px;">
+    <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #71717a; margin-bottom: 8px;">
+      Real output, real Odoo
+    </div>
+    <h2 style="font-size: 28px; margin: 0 0 12px; font-weight: 600;">A few examples of the answers.</h2>
+    <p style="font-size: 15px; color: #52525b; max-width: 620px; margin: 0 auto;">
+      Screenshots below are from <a href="https://equationx.ai/products/odoo-pilot" style="color:#2563eb;">OdooPilot</a>,
+      a paid third-party MCP client by equationx. Any MCP client connected via this module
+      reads the same Odoo data and can be asked the same questions.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 18px; max-width: 880px; margin: 0 auto;">
+    <figure style="margin:0; border: 1px solid #e4e4e7; border-radius: 14px; overflow: hidden;">
+      <img src="screenshot-pipeline.png" alt="Pipeline summary by stage and salesperson" style="width:100%; display:block;"/>
+      <figcaption style="padding: 10px 14px; font-size: 13px; color: #52525b; border-top: 1px solid #e4e4e7;">
+        <strong>Pipeline at a glance.</strong> Open leads bucketed by stage and consultant.
+      </figcaption>
+    </figure>
+    <figure style="margin:0; border: 1px solid #e4e4e7; border-radius: 14px; overflow: hidden;">
+      <img src="screenshot-1on1.png" alt="1:1 coaching prep for one salesperson" style="width:100%; display:block;"/>
+      <figcaption style="padding: 10px 14px; font-size: 13px; color: #52525b; border-top: 1px solid #e4e4e7;">
+        <strong>Salesperson review.</strong> 30-day numbers + leads worth discussing.
+      </figcaption>
+    </figure>
+    <figure style="margin:0; border: 1px solid #e4e4e7; border-radius: 14px; overflow: hidden;">
+      <img src="screenshot-sources.png" alt="Lead source breakdown" style="width:100%; display:block;"/>
+      <figcaption style="padding: 10px 14px; font-size: 13px; color: #52525b; border-top: 1px solid #e4e4e7;">
+        <strong>Source ROI audit.</strong> Scale &middot; Fix &middot; Test &middot; Ignore matrix.
+      </figcaption>
+    </figure>
+    <figure style="margin:0; border: 1px solid #e4e4e7; border-radius: 14px; overflow: hidden;">
+      <img src="screenshot-winrate.png" alt="Win-rate and loss-pattern analysis" style="width:100%; display:block;"/>
+      <figcaption style="padding: 10px 14px; font-size: 13px; color: #52525b; border-top: 1px solid #e4e4e7;">
+        <strong>Loss patterns.</strong> Junk vs. worked-then-lost, top lost reasons.
+      </figcaption>
+    </figure>
+  </div>
+
+  <p style="text-align:center; font-size: 13px; color: #71717a; margin-top: 18px;">
+    These are four example questions. The actual range is unlimited &mdash; any cut of any Odoo model.
   </p>
-  <p>
-    The generated API key works alongside two-factor authentication, which
-    password-based XML-RPC does not.
-  </p>
 
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 56px 0 32px;"/>
 
-  <h2 style="font-size: 22px; margin: 0 0 14px;">Standalone, by design</h2>
+  <!-- ====================== WHO IT'S FOR ====================== -->
+  <div style="text-align:center; margin-bottom: 28px;">
+    <h2 style="font-size: 28px; margin: 0 0 8px; font-weight: 600;">Who this is for</h2>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; max-width: 880px; margin: 0 auto;">
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Sales &amp; revenue leaders</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Pipeline visibility, forecasting, coaching, performance reviews on demand.
+      </div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Marketers &amp; growth</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Source / campaign ROI, attribution audits, where to spend next quarter.
+      </div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Operations &amp; sales ops</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Data quality audits, weekly rollups, ad-hoc segmentation, custom-field queries.
+      </div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Customer-facing roles</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Pull customer history, account state, recent activity &mdash; in conversation.
+      </div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Founders &amp; GMs</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Coach with numbers, not vibes. Quarterly reads without IT requests.
+      </div>
+    </div>
+    <div style="background:#f4f4f5; border-radius:12px; padding: 18px;">
+      <div style="font-weight:600;">Odoo implementers</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Ship to clients in 15 minutes. Custom-pack revenue on top.
+      </div>
+    </div>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 56px 0 32px;"/>
+
+  <!-- ====================== HOW IT WORKS ====================== -->
+  <div style="text-align:center; margin-bottom: 28px;">
+    <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #71717a; margin-bottom: 8px;">
+      Setup
+    </div>
+    <h2 style="font-size: 28px; margin: 0; font-weight: 600;">Two clicks, then ask anything.</h2>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; max-width: 800px; margin: 0 auto;">
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 18px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; color: #71717a; text-transform: uppercase;">Step 1</div>
+      <div style="font-weight: 600; margin-top: 6px;">Install &amp; open the wizard</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        Settings &rarr; MCP Connector &rarr; Setup wizard.
+      </div>
+    </div>
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 18px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; color: #71717a; text-transform: uppercase;">Step 2</div>
+      <div style="font-weight: 600; margin-top: 6px;">Generate the API key</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        One click creates a scoped, revocable key on the current user.
+      </div>
+    </div>
+    <div style="border: 1px solid #e4e4e7; border-radius: 14px; padding: 18px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; color: #71717a; text-transform: uppercase;">Step 3</div>
+      <div style="font-weight: 600; margin-top: 6px;">Paste config into your MCP client</div>
+      <div style="font-size: 14px; color: #52525b; margin-top: 4px;">
+        The wizard renders the JSON block. Paste, restart, done.
+      </div>
+    </div>
+  </div>
+
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 56px 0 32px;"/>
+
+  <!-- ====================== STANDALONE / WHAT SHIPS ====================== -->
+  <h2 style="font-size: 24px; margin: 0 0 14px; font-weight: 600;">Standalone, by design</h2>
   <p>
     This module is free and useful on its own. The generated key works with
-    any MCP-compatible client &mdash; not only with the OdooPilot agent recommended
-    below. You can also use the produced config as a template for building
-    your own MCP integrations.
+    any MCP-compatible client &mdash; not only with the OdooPilot agent mentioned
+    above. You can also use the produced config as a template for building your
+    own MCP integrations.
   </p>
+  <p style="margin-top: 18px; font-weight: 600;">What this module ships:</p>
+  <ul style="padding-left: 18px; color: #52525b;">
+    <li>One-click scoped, revocable API key on the current user (replaces password auth)</li>
+    <li>Auto-filled JSON config block (URL, database, login, key) ready to paste into any MCP client</li>
+    <li>2FA-compatible authentication &mdash; bypasses the 2FA roadblock that breaks password-only XML-RPC</li>
+    <li>Admin-only access (System group), with no data exposure to unprivileged users</li>
+    <li>Zero external network calls during install or use</li>
+  </ul>
 
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 48px 0;"/>
 
-  <h2 style="font-size: 22px; margin: 0 0 14px;">A ready-made MCP client (optional)</h2>
-  <p>
-    Don't have an MCP client yet?
-    <a href="https://equationx.ai/products/odoo-pilot" style="color: #2563eb;">OdooPilot</a>
-    is a third-party AI agent for Odoo CRM built by equationx. It lives in
-    Claude Desktop and answers questions like <em>&ldquo;give me the Monday brief&rdquo;</em>
-    or <em>&ldquo;how is Alex doing this month?&rdquo;</em> in plain English, in 30 seconds.
-  </p>
-  <p>
-    OdooPilot is a separate paid product. This connector module works with any
-    MCP client; OdooPilot is one option.
-  </p>
-
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
-
-  <h2 style="font-size: 22px; margin: 0 0 14px;">Customisations &amp; paid support</h2>
+  <!-- ====================== CUSTOMISATIONS / SUPPORT ====================== -->
+  <h2 style="font-size: 24px; margin: 0 0 14px; font-weight: 600;">Customisations &amp; paid support</h2>
   <p>
     Every Odoo deployment is different &mdash; custom fields, custom stages, custom
     modules, multi-company setups, Enterprise-only features. The connector
@@ -69,29 +322,31 @@
     bespoke workflow.
   </p>
   <p style="margin-top: 12px;">
-    <a href="https://equationx.ai/contact" style="color: #2563eb; margin-right: 16px;">Contact equationx</a>
-    <a href="https://equationx.ai/book" style="color: #2563eb;">Book a 20-min call</a>
+    <a href="https://equationx.ai/contact" style="color: #2563eb; margin-right: 16px;">Contact equationx &rarr;</a>
+    <a href="https://equationx.ai/book" style="color: #2563eb;">Book a 20-min call &rarr;</a>
   </p>
 
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 48px 0;"/>
 
-  <h2 style="font-size: 22px; margin: 0 0 14px;">Privacy</h2>
-  <ul style="padding-left: 18px;">
+  <!-- ====================== PRIVACY ====================== -->
+  <h2 style="font-size: 24px; margin: 0 0 14px; font-weight: 600;">Privacy</h2>
+  <ul style="padding-left: 18px; color: #52525b;">
     <li>No external network calls during install or use</li>
     <li>API keys are stored as hashed values via Odoo's standard mechanism</li>
     <li>Nothing is reported back to equationx or any third party</li>
   </ul>
 
-  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;"/>
+  <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 48px 0;"/>
 
-  <h2 style="font-size: 22px; margin: 0 0 14px;">Compatibility</h2>
-  <ul style="padding-left: 18px;">
+  <!-- ====================== COMPATIBILITY ====================== -->
+  <h2 style="font-size: 24px; margin: 0 0 14px; font-weight: 600;">Compatibility</h2>
+  <ul style="padding-left: 18px; color: #52525b;">
     <li>Odoo Community Edition 17 and 18</li>
     <li>Works with Enterprise as a superset</li>
     <li>Requires XML-RPC (default on Community Edition)</li>
   </ul>
 
-  <p style="text-align: center; font-size: 12px; color: #71717a; margin-top: 40px;">
+  <p style="text-align: center; font-size: 12px; color: #71717a; margin-top: 56px;">
     LGPL-3 &middot; equationx is independent and not affiliated with Odoo SA.
   </p>
 
